@@ -23,19 +23,19 @@ import java.util.Iterator;
 import java.util.ServiceConfigurationError;
 
 /*
- * Shows all possible providers
+ * Shows all possible providers.
  */
 
 public class AuthorDemo {
 
 
     /*
-     *  End of variables declaration
+     *  End of variables declaration.
      */
     private AuthorService author;
     
     /*
-     * Show all possible providers
+     * Show all possible providers.
      */
     public AuthorDemo() {
         author = AuthorService.getInstance();
@@ -49,7 +49,7 @@ public class AuthorDemo {
             System.out.println("ServiceConfigurationError" );
     	}
     }
-
+    
     /**
 	 * @param no runtime arguments used
 	 */
