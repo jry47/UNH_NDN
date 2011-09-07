@@ -49,15 +49,24 @@ public class AuthorService {
      */
     public Iterator<Author> getAuthorIterator() throws ServiceConfigurationError {
         try {
-            return loader.iterator();
-/*
- *             while (author == null && authors.hasNext()) {
+        	/*
+        	 * 
+        	// Adding in a print debugger
+        	// just a rename of loader
+        	ServiceLoader<Author> authors = loader;
+        	for (Author author : authors) {
+                System.out.println ("Author="+ author.getAuthor() );
+            }
 
-            	Author d = authors.next();
+        	 while (author == null && authors.hasNext()) {
+        	    Author d = authors.next();
                 author = d.getAuthor();
                 System.out.println ("Author="+ author );
-            }
- */
+          	 }
+          	 
+        	 */
+        	
+        	return loader.iterator();
         } catch (ServiceConfigurationError serviceError) {
         	throw (serviceError);
         }
