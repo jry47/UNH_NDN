@@ -1,6 +1,6 @@
 Running edu.unh.ndn.info/AuthorDemo
 
-For the ServiceLoader class to locate a service.
+For the ServiceLoader class to locate a service. 
 
 Service jar must be in the classpath and the jar contains:
 
